@@ -3,11 +3,12 @@
 
 #define pkt_length 32
 #define port 8089
-#define source_ip "192.168.1.34"
-#define dest_ip "192.168.1.38"
+#define source_ip "192.168.1.35"
+#define dest_ip "192.168.1.37"
 
 using namespace std;
 
+//ฟังก์ชันเปลี่ยนขนาดของ char array
 int find_size(char* str){
 	int i = 0;
 	while(i < pkt_length){
@@ -58,14 +59,13 @@ int main() {
       cin >> pkt;             //keyboard input
   	
       // send the pkt
-      int ret = sendto( s, pkt, find_size(pkt), 0, (sockaddr *)&dest, sizeof(dest) );
+      int ret = sendto( s, (char*)pkt, find_size(pkt), 0, (sockaddr *)&dest, sizeof(dest) );
 	  
     }else if(conn == 's'){
       char buf[1024];
       int n;
 	  int destlen = sizeof(sockaddr);
       n = recvfrom(s, buf, 1024, 0, (sockaddr *)&dest, &destlen);
-      //cout << n;
       if(n>0){
         cout << "Received a data : ";
 		cout << buf;

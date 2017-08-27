@@ -6,5 +6,6 @@ s.bind(("", port))
 print ("waiting on port:", port)
 while 1:
     # Receive up to 1,024 bytes in a datagram 
-    data,addr = s.recvfrom(1024) 
-    print ("Received:", data, "from", addr)
+    data,addr = s.recvfrom(1024)
+    datathai = data.decode("cp874")
+    print ("Received:", datathai, "from", addr)
