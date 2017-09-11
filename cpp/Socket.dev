@@ -11,7 +11,7 @@ ResourceIncludes=
 MakeIncludes=
 Compiler=
 CppCompiler=
-Linker="C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib/libws2_32.a"_@@_
+Linker="C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib/libws2_32.a"_@@_"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include/hashlibpp.h"_@@_
 IsCpp=1
 Icon=
 ExeOutput=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=3
+UnitCount=7
 
 [VersionInfo]
 Major=1
@@ -74,6 +74,46 @@ FileName=Makefile.win
 Folder=
 Compile=0
 Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit4]
+FileName=C:\Users\Pathompat\Downloads\hashlib2plus\trunk\src\hl_md5wrapper.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit5]
+FileName=hashlib2plus\trunk\src\hl_md5.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit6]
+FileName=hashlib2plus\trunk\src\hl_md5.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit7]
+FileName=hashlib2plus\trunk\src\hl_md5wrapper.h
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
