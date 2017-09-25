@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<artist>
+	<firstname>artivara</firstname>
+	<lastname>kongmarai</lastname>
+	<nickname>toon</nickname>
+	<age>37</age>
+	<date>1980-05-11</date>
+	<education>kmutnb</education>
+	<affiliation>
+		<musiccamp>GMM Grammy</musiccamp>
+		<bandname>Bodyslam</bandname>
+		<rank>singer</rank>
+	</affiliation>
+	<album name="in cram" released="2000">
+		<single name="konmetang">
+			<composer>custom</composer>
+		</single>
+	</album>
+	<album name="Bodyslam" released="1996">
+		<single name="Ngom Ngai">
+			<composer>custom</composer>
+		</single>
+	</album>
+</artist>
